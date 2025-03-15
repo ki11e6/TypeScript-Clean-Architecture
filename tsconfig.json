@@ -11,5 +11,11 @@
     "strict": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-  }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
