@@ -10,4 +10,5 @@ app.use(express.json());
 const server = app.listen(config.port, () => {
   console.log(`Listening at http://localhost:${config.port ?? 3000}`);
 });
+// Handle errors
 server.on("error", console.error);
