@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { BookOutputDto } from "./book.dto";
 
+// create book
 export const PostBookInputDto = z.object({
     id: z.string().uuid(),
     title: z.string().min(1),
@@ -11,5 +12,6 @@ export const PostBookInputDto = z.object({
 
 export type PostBookInputDto = ReturnType<typeof PostBookInputDto.parse>;
 
+// create book response
 export const PostBookOutputDto = BookOutputDto;
 export type PostBookOutputDto = ReturnType<typeof PostBookOutputDto.parse>;
